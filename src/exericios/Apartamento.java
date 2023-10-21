@@ -7,9 +7,6 @@ public class Apartamento {
 	/* private tipoOcupacao: EnumTipoOcupação */
 	private Proprietario proprietario;
 	
-	public Apartamento() {
-		
-	}
 
 	public Apartamento(int numeroAP, int qtdeQuartos, Proprietario proprietario) {
 		super();

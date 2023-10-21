@@ -6,11 +6,11 @@ import java.time.LocalDate;
 public class Despesa {
 
 	private String mesAno;
-	private BigDecimal currency;
+	private double currency;
 	private LocalDate dataEmissão;
 	private LocalDate dataVencimento;
 	
-	public Despesa(String mesAno, BigDecimal currency, LocalDate dataEmissão, LocalDate dataVencimento) {
+	public Despesa(String mesAno, double currency, LocalDate dataEmissão, LocalDate dataVencimento) {
 		super();
 		this.mesAno = mesAno;
 		this.currency = currency;
@@ -26,11 +26,11 @@ public class Despesa {
 		this.mesAno = mesAno;
 	}
 
-	public BigDecimal getCurrency() {
+	public double getCurrency() {
 		return currency;
 	}
 
-	public void setCurrency(BigDecimal currency) {
+	public void setCurrency(double currency) {
 		this.currency = currency;
 	}
 

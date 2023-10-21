@@ -7,14 +7,14 @@ public class Cobranca {
 
 	private String mesAno;
 	private int totalQuartos;
-	private BigDecimal valorAPagar; 
+	private double  valorAPagar; 
 	private LocalDate dataVencimento;
 	private LocalDate dataPagamento;
-	private BigDecimal jurosMora;
-	private BigDecimal valorTotal;
+	private double  jurosMora;
+	private  double valorTotal;
 	
-	public Cobranca(String mesAno, int totalQuartos, BigDecimal valorAPagar, LocalDate dataVencimento,
-			LocalDate dataPagamento, BigDecimal jurosMora, BigDecimal valorTotal) {
+	public Cobranca(String mesAno, int totalQuartos, double valorAPagar, LocalDate dataVencimento,
+			LocalDate dataPagamento, double  jurosMora, double  valorTotal) {
 		super();
 		this.mesAno = mesAno;
 		this.totalQuartos = totalQuartos;
@@ -24,6 +24,9 @@ public class Cobranca {
 		this.jurosMora = jurosMora;
 		this.valorTotal = valorTotal;
 	}
+	
+
+	
 	public String getMesAno() {
 		return mesAno;
 	}
@@ -36,10 +39,10 @@ public class Cobranca {
 	public void setTotalQuartos(int totalQuartos) {
 		this.totalQuartos = totalQuartos;
 	}
-	public BigDecimal getValorAPagar() {
+	public double getValorAPagar() {
 		return valorAPagar;
 	}
-	public void setValorAPagar(BigDecimal valorAPagar) {
+	public void setValorAPagar(double valorAPagar) {
 		this.valorAPagar = valorAPagar;
 	}
 	public LocalDate getDataVencimento() {
@@ -54,16 +57,16 @@ public class Cobranca {
 	public void setDataPagamento(LocalDate dataPagamento) {
 		this.dataPagamento = dataPagamento;
 	}
-	public BigDecimal getJurosMora() {
+	public double getJurosMora() {
 		return jurosMora;
 	}
-	public void setJurosMora(BigDecimal jurosMora) {
+	public void setJurosMora(double jurosMora) {
 		this.jurosMora = jurosMora;
 	}
-	public BigDecimal getValorTotal() {
+	public double getValorTotal() {
 		return valorTotal;
 	}
-	public void setValorTotal(BigDecimal valorTotal) {
+	public void setValorTotal(double valorTotal) {
 		this.valorTotal = valorTotal;
 	} 
 	
