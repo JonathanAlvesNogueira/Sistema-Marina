@@ -9,13 +9,15 @@ public class Despesa {
 	private double currency;
 	private LocalDate dataEmissão;
 	private LocalDate dataVencimento;
+	private TipoDespesa tipoDespesa;
 	
-	public Despesa(String mesAno, double currency, LocalDate dataEmissão, LocalDate dataVencimento) {
+	public Despesa(String mesAno, double currency, LocalDate dataEmissão, LocalDate dataVencimento,TipoDespesa tipoDespesa) {
 		super();
 		this.mesAno = mesAno;
 		this.currency = currency;
 		this.dataEmissão = dataEmissão;
 		this.dataVencimento = dataVencimento;
+		this.tipoDespesa = tipoDespesa;
 	}
 
 	public String getMesAno() {
@@ -48,6 +50,14 @@ public class Despesa {
 
 	public void setDataVencimento(LocalDate dataVencimento) {
 		this.dataVencimento = dataVencimento;
+	}
+
+	public TipoDespesa getTipoDespesa() {
+		return tipoDespesa;
+	}
+
+	public void setTipoDespesa(TipoDespesa tipoDespesa) {
+		this.tipoDespesa = tipoDespesa;
 	}
 	
 	

@@ -83,11 +83,54 @@ public class Main {
 			        	valorTotal = valorTotal + (valorTotal * jurosMora);
 			        }
 			        
-					Cobranca cob = new Cobranca(mesAno,totalQuartos, valorAPagar, dataVencimento, dataPagamento, jurosMora, valorTotal);
+			        System.out.println("Informe o nome");
+					String nome2 = JOptionPane.showInputDialog("Informe o nome do proprietário: ");
+			        
+			        System.out.println("Informe o telefone do Proprietário: ");
+					String telefone2 = JOptionPane.showInputDialog("Informe o nome do proprietário: ");
+					Proprietario prop2 = new Proprietario(nome2, telefone2);
+			        
+			        
+			        int qtdeQuartos2 = Integer.parseInt(JOptionPane.showInputDialog("Informe a quantidade de quartos: "));
+					int numeroAP2 = Integer.parseInt(JOptionPane.showInputDialog("Informe o numero do apartamento: "));
+					Apartamento ap2 = new Apartamento(numeroAP2, qtdeQuartos2, prop2);
+			        
+					Cobranca cob = new Cobranca(ap2, mesAno,totalQuartos, valorAPagar, dataVencimento, dataPagamento, jurosMora, valorTotal);
 					break;
 					
 				case 3:
 					
+					System.out.println("Informe o nome");
+					String nome5 = JOptionPane.showInputDialog("Informe o nome do proprietário: ");
+			        
+			        System.out.println("Informe o telefone do Proprietário: ");
+					String telefone5 = JOptionPane.showInputDialog("Informe o telefone do proprietário: ");
+					Proprietario prop5 = new Proprietario(nome5, telefone5);
+			        
+			        
+			        int qtdeQuartos5 = Integer.parseInt(JOptionPane.showInputDialog("Informe a quantidade de quartos: "));
+					int numeroAP5 = Integer.parseInt(JOptionPane.showInputDialog("Informe o numero do apartamento: "));
+					Apartamento ap5 = new Apartamento(numeroAP5, qtdeQuartos5, prop5);
+			        
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					String nomeDespesa = JOptionPane.showInputDialog("Informe o nome da despesa ");
+					boolean valorBol = true;
+					TipoDespesa tipoDepesa = new TipoDespesa(nomeDespesa, valorBol);
+					
+					
+		
 					String mesDoAno = JOptionPane.showInputDialog("Informe o mes ") ;
 					double valor = Double.parseDouble(JOptionPane.showInputDialog("Informe o valor da despesa: "));
 					
@@ -113,8 +156,12 @@ public class Main {
 				        // Criar um objeto LocalDate
 				        LocalDate dataVencimentoDespesa = LocalDate.of(ano, mes, dia);
 					
-					Despesa desp = new Despesa(mesDoAno, valor, dataEmissao, dataVencimentoDespesa);
+					Despesa desp = new Despesa(mesDoAno, valor, dataEmissao, dataVencimentoDespesa,tipoDepesa);
+					ap5.despesaAp.add(desp);
 					break;
+				
+					
+					
 			}
 			
 			

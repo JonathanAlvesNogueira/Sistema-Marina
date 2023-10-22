@@ -1,10 +1,10 @@
 package exericios;
 
-import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public class Cobranca {
 
+	private Apartamento apartamento;
 	private String mesAno;
 	private int totalQuartos;
 	private double  valorAPagar; 
@@ -13,9 +13,10 @@ public class Cobranca {
 	private double  jurosMora;
 	private  double valorTotal;
 	
-	public Cobranca(String mesAno, int totalQuartos, double valorAPagar, LocalDate dataVencimento,
+	public Cobranca(Apartamento apartamento, String mesAno, int totalQuartos, double valorAPagar, LocalDate dataVencimento,
 			LocalDate dataPagamento, double  jurosMora, double  valorTotal) {
 		super();
+		this.apartamento = apartamento;
 		this.mesAno = mesAno;
 		this.totalQuartos = totalQuartos;
 		this.valorAPagar = valorAPagar;

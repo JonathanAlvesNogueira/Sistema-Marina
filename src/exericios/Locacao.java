@@ -1,11 +1,14 @@
 package exericios;
 
 import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Locacao {
 
 	private LocalDate dataEntrada;
 	private LocalDate dataSaida;
+	private Set<Locacao> setLocacao = new HashSet<>();
 	
 	public Locacao(LocalDate dataEntrada, LocalDate dataSaida) {
 		super();

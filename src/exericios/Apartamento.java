@@ -1,11 +1,15 @@
 package exericios;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Apartamento {
 
 	private int numeroAP;
 	private int qtdeQuartos;
 	/* private tipoOcupacao: EnumTipoOcupação */
 	private Proprietario proprietario;
+	public Set<Despesa> despesaAp = new HashSet<>();
 	
 
 	public Apartamento(int numeroAP, int qtdeQuartos, Proprietario proprietario) {
@@ -45,6 +49,9 @@ public class Apartamento {
 	public void setProprietario(Proprietario proprietario) {
 		this.proprietario = proprietario;
 	}
+
+
+	
 
 
 
